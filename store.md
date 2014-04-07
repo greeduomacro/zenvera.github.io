@@ -7,8 +7,8 @@ icon: fa-usd
 {% raw %}
 <script>$.get('https://zvwapi.appspot.com/store.php', function( data ) { $( '#store' ).html( data ); });</script>
 <div id='store'></div>
+<br/>
 {% endraw %}
-
 
 
 __Please double check your account name before placing your order.__
