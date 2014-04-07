@@ -2,6 +2,7 @@
 layout: article
 heading: How-To
 subheading: This is what a subheading would look like in my template.
+icon: fa-play-circle
 ---
 ### Connection Information
 
