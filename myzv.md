@@ -5,5 +5,5 @@ subheading: MyZenvera is a portal to the world of Zenvera. You can search for an
 icon: fa-trophy
 ---
 {% raw %}
-<script>$.get('https://my-zvx.rhcloud.com', function( data ) { $( '#psubheading' ).append( data ); });</script>
+<script>$.get('https://my-zvx.rhcloud.com', function( data ) { $( '#psubheading' ).append( " " ); $( '#psubheading' ).append( data ); });</script>
 {% endraw %}
