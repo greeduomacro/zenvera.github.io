@@ -11,7 +11,7 @@
 /* Basic */
 
 	body, #skel-layers-wrapper {
-		background: #f3f6fa;
+		background: #E5E5FF; /*#f3f6fa;*/
 	}
 
 	body.loading * {

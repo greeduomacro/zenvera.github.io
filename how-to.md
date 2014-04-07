@@ -1,7 +1,7 @@
 ---
 layout: article
 heading: How-To
-subheading: This is what a subheading would look like in my template.
+subheading: Zenvera is completely free to play. You can be up and running in just a few minutes by following the simple instructions below.
 icon: fa-play-circle
 ---
 ### Connection Information
