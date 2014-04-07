@@ -2,7 +2,7 @@
 				<script>$.get("https://zenvera.herokuapp.com/status.php", function( data ) {
                     $( "#status" ).html( data );
                 });</script>
-                <h1 id="status" style="position: absolute; text-align: center; float: none; width: 100%; left: 0; right: 0;"></h1>
+                <h1 id="status" style="position: absolute; text-align: center; float: none; width: 100%; left: 0; right: 0; z-index: -1"></h1>
 				<nav id="nav">
 					<ul>
 						<li class="current"><a href="index.html">Welcome</a></li>
@@ -13,18 +13,10 @@
 								<li><a href="rules.html">Shard Rules</a></li>
 								<li><a href="store.html">Zenvera Store</a></li>
 								<li><a href="account.html">Recover Account</a></li>
+								<li><a href="http://maps.zenvera.com">World Map</a></li>
 								<li><a href="http://my.zenvera.com">My Zenvera</a></li>
+								<li><a href="https://webchat.freenode.net/?channels=%23zenvera&uio=d4">IRC Chat</a></li>
 								<li><a href="http://forums.zenvera.com">Forums</a></li>
-								<li class="submenu">
-									<a href="">Submenu</a>
-									<ul>
-										<li><a href="#">Dolore Sed</a></li>
-										<li><a href="#">Consequat</a></li>
-										<li><a href="#">Lorem Magna</a></li>
-										<li><a href="#">Sed Magna</a></li>
-										<li><a href="#">Ipsum Nisl</a></li>
-									</ul>
-								</li>
 							</ul>
 						</li>
 						<li><a href="how-to.html" class="button special">Join Us</a></li>
