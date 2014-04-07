@@ -30,8 +30,9 @@
 			<header id="header" class="alt">
 				<h1 id="logo"><a href="index.html">Zenvera <span>Ultima Project</span></a></h1>
 				<script>$.get("https://zenvera.herokuapp.com/status.php", function( data ) {
-                    $( "#logo" ).append( data );
+                    $( "#status" ).html( data );
                 });</script>
+                <div id="status" style="position: absolute; margin-left: auto; margin-right: auto"/>
 				<nav id="nav">
 					<ul>
 						<li class="current"><a href="index.html">Welcome</a></li>
