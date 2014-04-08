@@ -24,7 +24,7 @@ icon: fa-trophy
 <div id="faction-guild-rankings">Loading...</div>
 </fieldset>
 </div>
-<div style="clear: both; margin-top: 50px;">
+<div style="clear: both; position: relative; top: 50px;">
 <fieldset>
 <legend><strong>Town Status</strong></legend>
 <div id="town-status">Loading...</div>
