@@ -569,7 +569,7 @@
 		}
 
 		.wrapper.style4 {
-			background: white;
+			background: rgba(36,36,36,0); /*white;*/
 			color: inherit;
 			padding: 4em;
 		}
