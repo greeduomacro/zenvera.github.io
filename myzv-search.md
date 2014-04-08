@@ -6,7 +6,7 @@ subheading: Zenvera Player and Guild Search
 icon: fa-trophy
 ---
 {% raw %}
-<fieldset>
+<fieldset style="float: left;">
 <form action="#" onsubmit="return PlayerSearch();">
 <p><label for="playerQ">Player Search:</label><input id="playerQ" type="text" name="playerQuery" size="20" style="width: auto; padding: 0;"/><input type="submit" onclick='PlayerSearch();' value="Search!"/></p>
 </form>
