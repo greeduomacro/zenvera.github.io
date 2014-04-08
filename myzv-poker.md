@@ -8,7 +8,19 @@ icon: fa-trophy
 Zenvera tracks every poker game played within the world.
 {% raw %}
 <div id="poker-status">Loading...</div>
-<div id="poker-latest">Loading...</div>
+<div style="float: left;">
+<fieldset>
+<legend><strong>Latest Low-Rollers</strong></legend>
+<div id="poker-lowrollers">Loading...</div>
+</fieldset>
+</div>
+<div style="float: right;">
+<fieldset>
+<legend><strong>Latest High-Rollers</strong></legend>
+<div id="poker-highrollers">Loading...</div>
+</fieldset>
+</div>
+<div style="clear: both;"></div>
 <div style="float: left;">
 <fieldset>
 <legend><strong>Largest Laydowns</strong></legend>
@@ -35,7 +47,8 @@ Zenvera tracks every poker game played within the world.
 </fieldset>
 </div>
 <script>$.get('https://myzv.herokuapp.com/poker-status.php', function( data ) { $( '#poker-status' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/poker-latest-hands.php', function( data ) { $( '#poker-latest' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/poker-latest-low-rollers.php', function( data ) { $( '#poker-lowrollers' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/poker-latest-high-rollers.php', function( data ) { $( '#poker-highrollers' ).html( data ); });</script>
 <script>$.get('https://myzv.herokuapp.com/poker-largest-laydowns.php', function( data ) { $( '#poker-laydowns' ).html( data ); });</script>
 <script>$.get('https://myzv.herokuapp.com/poker-largest-showdowns.php', function( data ) { $( '#poker-showdowns' ).html( data ); });</script>
 <script>$.get('https://myzv.herokuapp.com/poker-sharks.php', function( data ) { $( '#poker-sharks' ).html( data ); });</script>
