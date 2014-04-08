@@ -5,7 +5,18 @@ heading: My Zenvera Poker
 subheading: Zenvera Poker Statistics
 icon: fa-trophy
 ---
+Zenvera tracks every poker game played within the world.
 {% raw %}
-<div id="poker">Loading...</div>
-<script>$.get('https://myzv.herokuapp.com/poker.php', function( data ) { $( '#poker' ).html( data ); });</script>
+<div id="poker-status">Loading...</div>
+<div id="poker-latest">Loading...</div>
+<div id="poker-laydowns">Loading...</div>
+<div id="poker-showdowns">Loading...</div>
+<div id="poker-sharks">Loading...</div>
+<div id="poker-fishes">Loading...</div>
+<script>$.get('https://myzv.herokuapp.com/poker-status.php', function( data ) { $( '#poker-status' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/poker-latest-hands.php', function( data ) { $( '#poker-latest' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/poker-largest-laydowns.php', function( data ) { $( '#poker-laydowns' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/poker-largest-showdowns.php', function( data ) { $( '#poker-showdowns' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/poker-sharks.php', function( data ) { $( '#poker-sharks' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/poker-fishes.php', function( data ) { $( '#poker-fishes' ).html( data ); });</script>
 {% endraw %}
