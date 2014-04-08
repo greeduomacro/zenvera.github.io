@@ -50,16 +50,8 @@ icon: fa-usd
 </div>
 <script src="https://checkout.google.com/inapp/lib/buy.js"></script>
 <script type='text/javascript'>
-    function RunButton() {
-      $.post( "https://zvwapi.appspot.com/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
-        console.log( data.genJWT );
-        google.payments.inapp.buy({
-          jwt: data.genJWT,
-          success: function() {console.log('success');},
-          failure: function(result) {console.log(result.response.errorType);}
-        });
-      }, "json");
-      return false;
+    function RunButton() { $.post( "https://zvwapi.appspot.com/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
+        google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
     }
 </script>
 <div style="margin-left=auto;margin-right=auto;float:left;">
