@@ -6,6 +6,6 @@ subheading: Zenvera Poker Statistics
 icon: fa-trophy
 ---
 {% raw %}
-<p id="poker"></p>
+<div id="poker">Loading...</div>
 <script>$.get('https://myzv.herokuapp.com/poker.php', function( data ) { $( '#poker' ).html( data ); });</script>
 {% endraw %}

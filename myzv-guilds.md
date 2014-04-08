@@ -6,6 +6,26 @@ subheading: Zenvera Guild Status
 icon: fa-trophy
 ---
 {% raw %}
-<p id="guilds"></p>
-<script>$.get('https://myzv.herokuapp.com/guilds.php', function( data ) { $( '#guilds' ).html( data ); });</script>
+<div style="float: left;">
+<fieldset>
+<legend><strong>Largest Guilds</strong></legend>
+<div id="largest-guilds">Loading...</div>
+</fieldset>
+</div>
+<div style="float: left;">
+<fieldset>
+<legend><strong>Top Murdering Guilds</strong></legend>
+<div id="murdering-guilds">Loading...</div>
+</fieldset>
+</div>
+<div style="float: left;">
+<fieldset>
+<legend><strong>Top Warring Guilds</strong></legend>
+<div id="warring-guilds">Loading...</div>
+</fieldset>
+</div>
+<p style="clear: both;"></p>
+<script>$.get('https://myzv.herokuapp.com/guild-size-rankings.php', function( data ) { $( '#largest-guilds' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/guild-murder-rankings.php', function( data ) { $( '#murdering-guilds' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/guild-wars-rankings.php', function( data ) { $( '#warring-guilds' ).html( data ); });</script>
 {% endraw %}
