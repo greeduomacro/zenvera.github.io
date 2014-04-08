@@ -9,20 +9,30 @@ Zenvera tracks every poker game played within the world.
 {% raw %}
 <div id="poker-status">Loading...</div>
 <div id="poker-latest">Loading...</div>
-<div style="clear: left;">
+<div style="float: left;">
 <fieldset>
 <legend><strong>Largest Laydowns</strong></legend>
 <div id="poker-laydowns">Loading...</div>
 </fieldset>
 </div>
-<div style="float: left;">
+<div style="float: right;">
 <fieldset>
 <legend><strong>Largest Showdowns</strong></legend>
 <div id="poker-showdowns">Loading...</div>
 </fieldset>
 </div>
+<div style="float: left;">
+<fieldset>
+<legend><strong>Poker Sharks</strong></legend>
 <div id="poker-sharks">Loading...</div>
+</fieldset>
+</div>
+<div style="float: right;">
+<fieldset>
+<legend><strong>Poker Fishes</strong></legend>
 <div id="poker-fishes">Loading...</div>
+</fieldset>
+</div>
 <script>$.get('https://myzv.herokuapp.com/poker-status.php', function( data ) { $( '#poker-status' ).html( data ); });</script>
 <script>$.get('https://myzv.herokuapp.com/poker-latest-hands.php', function( data ) { $( '#poker-latest' ).html( data ); });</script>
 <script>$.get('https://myzv.herokuapp.com/poker-largest-laydowns.php', function( data ) { $( '#poker-laydowns' ).html( data ); });</script>
