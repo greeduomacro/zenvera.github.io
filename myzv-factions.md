@@ -6,5 +6,5 @@ icon: fa-trophy
 ---
 {% raw %}
 <p id="factions"></p>
-<script>$.get('https://my-zvx.rhcloud.com/factions.php', function( data ) { $( '#factions' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/factions.php', function( data ) { $( '#factions' ).html( data ); });</script>
 {% endraw %}

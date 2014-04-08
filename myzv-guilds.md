@@ -6,5 +6,5 @@ icon: fa-trophy
 ---
 {% raw %}
 <p id="guilds"></p>
-<script>$.get('https://my-zvx.rhcloud.com/guilds.php', function( data ) { $( '#guilds' ).html( data ); });</script>
+<script>$.get('https://myzv.herokuapp.com/guilds.php', function( data ) { $( '#guilds' ).html( data ); });</script>
 {% endraw %}
