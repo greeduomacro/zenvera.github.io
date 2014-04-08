@@ -16,8 +16,7 @@ icon: fa-trophy
 <p><label for="guildQ">Guild Search:</label><input id="guildQ" type="text" name="guildQuery" size="20" style="width: auto; padding: 0;"/><input type="submit" onclick='GuildSearch();' value="Search!"/></p>
 </form>
 </fieldset>
-<p>Enter a full or partial player name. Searches must be at least 3 characters in length. Enter a full or partial guild name, or guild abbreviation.</p>
-<div id="results"></div>
+<div id="results">Enter a full or partial player name. Searches must be at least 3 characters in length. Enter a full or partial guild name, or guild abbreviation.</div>
 <script>
     function PlayerSearch() { 
         $.get('https://myzv.herokuapp.com/player-search.php?term=' + $("#playerQ").val(), function( data ) { $( '#results' ).html( data ); }); return false;
