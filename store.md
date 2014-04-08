@@ -1,5 +1,6 @@
 ---
 layout: article
+title: Zenvera Store
 heading: Store
 subheading: Zenvera is completely free to play. We rely on purchases from the Zenvera store to offset project expenses.
 icon: fa-usd

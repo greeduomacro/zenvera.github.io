@@ -1,5 +1,6 @@
 ---
 layout: article
+title: Zenvera Account Management
 heading: Account Management
 subheading: The following forms can be used to reset your account password or retrieve a list of account names.
 icon: fa-lock

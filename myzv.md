@@ -1,5 +1,6 @@
 ---
 layout: myzv
+title: My Zenvera
 heading: My Zenvera
 subheading: MyZenvera is a portal to the world of Zenvera. You can search for any player or guild on the server, view the dueling rankings, or check the current status of faction towns.
 icon: fa-trophy

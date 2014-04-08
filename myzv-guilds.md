@@ -1,5 +1,6 @@
 ---
 layout: myzv
+title: My Zenvera Guilds
 heading: My Zenvera Guilds
 subheading: Zenvera Guild Status
 icon: fa-trophy

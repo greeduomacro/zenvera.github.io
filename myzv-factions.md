@@ -1,5 +1,6 @@
 ---
 layout: myzv
+title: My Zenvera Factions
 heading: My Zenvera Factions
 subheading: Zenvera Faction Status
 icon: fa-trophy

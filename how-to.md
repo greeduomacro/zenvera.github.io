@@ -1,5 +1,6 @@
 ---
 layout: article
+title: Zenvera How-To
 heading: How-To
 subheading: Zenvera is completely free to play. You can be up and running in just a few minutes by following the simple instructions below.
 icon: fa-play-circle

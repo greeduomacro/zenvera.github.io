@@ -1,5 +1,6 @@
 ---
 layout: article
+title: Zenvera Map
 heading: <a href="https://zvwmap.appspot.com" target="_blank">World Map</a>
 subheading:
 icon: fa-globe

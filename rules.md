@@ -1,5 +1,6 @@
 ---
 layout: article
+title: Zenvera Rules
 heading: Shard Rules
 subheading: Zenvera is largely a self-moderating community. Please be respectful of that.
 icon: fa-exclamation-circle
