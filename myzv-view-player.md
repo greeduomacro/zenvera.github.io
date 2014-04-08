@@ -11,6 +11,7 @@ icon: fa-trophy
 <script>
     $(document).ready( function() {
         var id = $.url().param('id');
+        $('#mheader').css('padding-top', '0');
         $('#page-icon').html('<img src="https://myzv.herokuapp.com/myzv-img/character.php?id=' + id + '" alt="Player Image"/>' );
         $.get('https://myzv.herokuapp.com/view-player.php?id=' + id, function( data ) { $( '#details' ).html( data ); $('#pheading').text( $('#name-value').text() ); $('#psubheading').html( $('#guild-value').html() ); });
     });
