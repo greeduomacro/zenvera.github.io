@@ -5,6 +5,10 @@ subheading: MyZenvera is a portal to the world of Zenvera. You can search for an
 icon: fa-trophy
 ---
 {% raw %}
+<p id="guildsize"></p>
+<p id="playerduel"></p>
+<p id="playermurderers"></p>
+<p id="guildmurderers"></p>
 <script>$.get('https://my-zvx.rhcloud.com', function( data ) { $( '#psubheading' ).append( " " ); $( '#psubheading' ).append( data ); });</script>
 <script>$.get('https://my-zvx.rhcloud.com/guilds-size.php', function( data ) { $( '#guildsize' ).html( data ); });</script>
 <script>$.get('https://my-zvx.rhcloud.com/players-duelists.php', function( data ) { $( '#playerduel' ).html( data ); });</script>
