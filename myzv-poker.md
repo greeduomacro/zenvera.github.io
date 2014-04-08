@@ -21,6 +21,7 @@ Zenvera tracks every poker game played within the world.
 <div id="poker-showdowns">Loading...</div>
 </fieldset>
 </div>
+<br style="clear: both;" />
 <div style="float: left;">
 <fieldset>
 <legend><strong>Poker Sharks</strong></legend>
