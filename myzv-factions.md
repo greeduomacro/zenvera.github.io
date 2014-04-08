@@ -12,7 +12,7 @@ icon: fa-trophy
 <div id="faction-rankings">Loading...</div>
 </fieldset>
 </div>
-<div style="float:right;">
+<div style="float:right; width: 380px;">
 <fieldset>
 <legend><strong>Player Rankings</strong></legend>
 <div id="faction-player-rankings">Loading...</div>
