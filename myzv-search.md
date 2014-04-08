@@ -7,15 +7,13 @@ icon: fa-trophy
 ---
 {% raw %}
 <fieldset>
-<legend>Player Search</legend>
 <form action="#" onsubmit="return PlayerSearch();">
-<p><label for="playerQ">Search Term: </label><input id="playerQ" type="text" name="playerQuery" size="20"/><input type="submit" onclick='PlayerSearch();' value="Search!"/></p>
+<p><label for="playerQ">Player Search:</label><input id="playerQ" type="text" name="playerQuery" size="20" style="width: auto; padding: 0;"/><input type="submit" onclick='PlayerSearch();' value="Search!"/></p>
 </form>
 </fieldset>
 <fieldset>
-<legend>Guild Search</legend>
 <form action="#" onsubmit="return GuildSearch();">
-<p><label for="guildQ">Search Term: </label><input id="guildQ" type="text" name="guildQuery" size="20"/><input type="submit" onclick='GuildSearch();' value="Search!"/></p>
+<p><label for="guildQ">Guild Search:</label><input id="guildQ" type="text" name="guildQuery" size="20" style="width: auto; padding: 0;"/><input type="submit" onclick='GuildSearch();' value="Search!"/></p>
 </form>
 </fieldset>
 <p>Enter a full or partial player name. Searches must be at least 3 characters in length. Enter a full or partial guild name, or guild abbreviation.</p>
