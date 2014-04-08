@@ -14,7 +14,7 @@ Zenvera tracks every poker game played within the world.
 <div id="poker-lowrollers">Loading...</div>
 </fieldset>
 </div>
-<div style="float: right;">
+<div style="position: relative; left: 100px;">
 <fieldset>
 <legend><strong>Latest High-Rollers</strong></legend>
 <div id="poker-highrollers">Loading...</div>
@@ -27,7 +27,7 @@ Zenvera tracks every poker game played within the world.
 <div id="poker-laydowns">Loading...</div>
 </fieldset>
 </div>
-<div style="float: right;">
+<div style="position: relative; left: 100px;">
 <fieldset>
 <legend><strong>Largest Showdowns</strong></legend>
 <div id="poker-showdowns">Loading...</div>
@@ -40,7 +40,7 @@ Zenvera tracks every poker game played within the world.
 <div id="poker-sharks">Loading...</div>
 </fieldset>
 </div>
-<div style="float: right;">
+<div style="position: relative; left: 100px;">
 <fieldset>
 <legend><strong>Poker Fishes</strong></legend>
 <div id="poker-fishes">Loading...</div>
