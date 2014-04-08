@@ -24,10 +24,10 @@ icon: fa-trophy
 </fieldset>
 <script>
     function PlayerSearch() { 
-        $.get('https://myzv.herokuapp.com/player-search.php?term=' + $("#playerQuery"), function( data ) { $( '#search' ).html( data ); }); return false;
+        $.get('https://myzv.herokuapp.com/player-search.php?term=' + $("#playerQuery").val(), function( data ) { $( '#search' ).html( data ); }); return false;
     }
     function GuildSearch() { 
-        $.get('https://myzv.herokuapp.com/guild-search.php?term=' + $("#guildQuery"), function( data ) { $( '#search' ).html( data ); }); return false;
+        $.get('https://myzv.herokuapp.com/guild-search.php?term=' + $("#guildQuery").val(), function( data ) { $( '#search' ).html( data ); }); return false;
     }
 </script>
 {% endraw %}
