@@ -57,7 +57,7 @@ icon: fa-usd
 <div style="margin-left=auto;margin-right=auto;float:left;">
     <fieldset>
         <legend><b>Google Wallet</b></legend>
-        <form action"#" onsubmit="return RunButton();" id="googleWalletForm">
+        <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
         <table>
         <tr><td><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</td></tr><tr><td><select name="os0">
                 <option value="100 ZP">100 ZP $1.00 USD</option>
