@@ -51,7 +51,7 @@ icon: fa-usd
 <div style="margin-left=auto; margin-right=auto; float:left; text-align: center;">
     <fieldset>
     <legend><b>Amazon Payments</b></legend>
-    <form action="https://zvwapi.appspot.com/store-amazon.php" method="post" target="_top">
+    <form action="https://zenvera.herokuapp.com/store/store-amazon.php" method="post" target="_top">
         <table>
         <tr><td><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</td></tr><tr><td><select name="os0">
             <option value="100 ZP">100 ZP $1.00 USD</option>
@@ -70,7 +70,7 @@ icon: fa-usd
 </div>
 <script src="https://checkout.google.com/inapp/lib/buy.js"></script>
 <script type='text/javascript'>
-    function RunButton() { $.post( "https://zvwapi.appspot.com/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
+    function RunButton() { $.post( "https://zenvera.herokuapp.com/store/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
         google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
     }
 </script>
@@ -98,7 +98,7 @@ icon: fa-usd
 <div style="margin-left=auto; margin-right=auto; float:none; text-align: center;">
     <fieldset>
     <legend><b>Bitcoin</b></legend>
-    <form action="https://zvwapi.appspot.com/store-coinbase.php" method="post" target="_top">
+    <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
         <table>
         <tr><td><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</td></tr><tr><td><select name="os0">
                 <option value="100 ZP">100 ZP $1.00 USD</option>
