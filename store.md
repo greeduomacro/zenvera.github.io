@@ -6,9 +6,9 @@ subheading: Zenvera is completely free to play. We rely on purchases from the Ze
 icon: fa-usd
 ---
 {% raw %}
-<div style="margin-left=auto;margin-right=auto;float:left;">
+<div style="margin-left=auto; margin-right=auto;float:left; border: 2px; border-style: solid; border-color: red; text-align: center;">
     <fieldset>
-    <legend><b>PayPal</b> - <strong>Sale!</strong></legend>
+    <legend><strong>PayPal - </strong><strong style="color: red;">Sale!</strong></legend>
 <!--
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -48,7 +48,7 @@ icon: fa-usd
 
     </fieldset>
 </div>
-<div style="margin-left=auto;margin-right=auto;float:left;">
+<div style="margin-left=auto; margin-right=auto; float:left; text-align: center;">
     <fieldset>
     <legend><b>Amazon Payments</b></legend>
     <form action="https://zvwapi.appspot.com/store-amazon.php" method="post" target="_top">
@@ -74,7 +74,7 @@ icon: fa-usd
         google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
     }
 </script>
-<div style="margin-left=auto;margin-right=auto;float:left;">
+<div style="margin-left=auto; margin-right=auto; float:left; text-align: center;">
     <fieldset>
         <legend><b>Google Wallet</b></legend>
         <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
@@ -95,7 +95,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-<div style="margin-left=auto;margin-right=auto;float:none;">
+<div style="margin-left=auto; margin-right=auto; float:none; text-align: center;">
     <fieldset>
     <legend><b>Bitcoin</b></legend>
     <form action="https://zvwapi.appspot.com/store-coinbase.php" method="post" target="_top">
