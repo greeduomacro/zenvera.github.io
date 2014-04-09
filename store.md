@@ -120,6 +120,7 @@ icon: fa-usd
 
 _\* 25% PayPal ZP bonus until April 20th, 2014._
 
+
 __Please double check your account name before placing your order.__
 Your items will be available to characters on the account name you provide during checkout as soon as the transaction clears.
 You can access the Zenvera redemption system in-game by typing [zenvera at any time or by double-clicking one of the Zenvera stones throughout the world.
