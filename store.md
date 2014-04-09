@@ -118,6 +118,7 @@ icon: fa-usd
 <br />
 {% endraw %}
 
+_\* 25% PayPal ZP bonus until April 20th, 2014._
 
 __Please double check your account name before placing your order.__
 Your items will be available to characters on the account name you provide during checkout as soon as the transaction clears.
