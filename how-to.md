@@ -17,7 +17,7 @@ _Port 80 can be used as an alternative for those behind restrictive firewalls._
 
 The game and assistant installers are free to obtain and do not contain any advertising or otherwise malicious software. They can be easily uninstalled at any time. We strongly suggest only obtaining them from the their official locations below:
 
-1. [Ultima Online Classic](http://www.uo.com/Client-Download) ([License/TOS](https://help.ea.com/article/uo-terms-of-service) [Patching and Uninstallation Instructions](https://help.ea.com/article/patching-ultima-online)
+1. [Ultima Online Classic](http://www.uo.com/Client-Download) ([License/TOS](https://help.ea.com/article/uo-terms-of-service) [Patching and Uninstallation Instructions](https://help.ea.com/article/patching-ultima-online))
 2. UO Assistant (one of the following):
   * [Razor](https://github.com/msturgill/razor/releases/latest)
   * [UOSteam](http://uosteam.com)
