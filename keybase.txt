@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/zenvera
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://zenvera.com
+  * I am zenvera (https://keybase.io/zenvera) on keybase.
+  * I have a public key with fingerprint 4402 9731 6254 86D1 C113  D41B 5962 13E9 2932 243B
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "44029731625486d1c113d41b596213e92932243b",
+            "host": "keybase.io",
+            "key_id": "596213E92932243B",
+            "uid": "48cabf6e3a01396a0463428d09ee1400",
+            "username": "zenvera"
+        },
+        "service": {
+            "hostname": "zenvera.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1397614907,
+    "expire_in": 157680000,
+    "prev": "3df70397061fe1f38f8a2193548bd49a7af85994eeffa5442455b74be04aa019",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.14 (GNU/Linux)
+
+owGbwMvMwMQYmST8UtNIxZrx9IEPSQzBvi+tq5WS8lMqlayqlbJTwVRaZl56alFB
+UWZeiZKVkomJgZGlubGhmZGpiYVZimGyoaFxiolhkqmlmZGhcaqlkaWxkZGJcZKS
+jlJGfjFIB9CYpMTiVL3MfKAYkBOfmQIUhah3hal3AsqVgiVMLJITk9LMUo0TDQyN
+Lc0SDUzMjE2MLFIMLFNTDU0MDEAKi1OL8hJzU4Gqq1LzylKLEpVqdZSAgmWZyakg
+J4NsRlWgl5yfC9RZUJRfkp+cnwOUyCgpKSi2AmksqSwAqSxPTYqHmhGflJmXAvQ2
+UAdQc3Fmfp6SlSFQZXJJJshQoLvMzQxNLA3MdZRSKwoyi1LjM0EqTM3NLAyAAGRP
+ahnQSOOUNHMDoGIDM8O0VMM0Y4s0i0QjQ0tjYNAlpZhYJponplmYWlqapKampSWa
+mpgYmZiaJpmbJKUamCQCvW+pBPJVYV6+kpUJ0JmJ6UAjizPT8xJLSotSlWo7mWRY
+GBiZGNhYmUARx8DFKQCLzj1N/P8DxIQzDbz8b8v+n2alFHP20OZFl+f9ZXF5vHru
+lm8VE+M/TOmIYFO1WdZ5Z/E7nhzhi/67eJiuVqt0mUV5y27ksRXQdj7Pf7VYgyfD
+cWlW4xTeUkaT1wvPtcq8XS47X7Ir/Jts2NWTO7LMvq50ecvFy96mUxChP1dtyVq/
+f86hJ3t/q0vvXXzlvVB4+4djGbLS4i51X687rGebUsvY2tR6XyHrrt/HzbUVu0vW
+T8s02MFvLTXN5pri7JfFfVb3rFc9/lta8d0z6PJ214hsqxM/bxU/q/1azSj6SGJp
+qTLP6tItVWw5W03XiIl9fnmnsP2D5O4zx932dUX620d07uxXL17WbPBr+dY1dZ2+
+q4U6awTO7K2rFDoTqRn3WlE3a3NSbl1OpN/k5bayh3+vu1r596TG7aPKXxcdsWh7
+5ffo8G2lRVfnvnG5PHlOYklaosSat0HPWIrmt7k/CzEJ2Oh2Op5/WwEDw3veVpGg
+jsarrNYObWqL3PnnPl7EkCyh/Pv/K/VSJtbdiUobxJbyxuzdXzHxo5DyubO7vitP
+XzwlS7gvJnTVpFQZkZ9vJA74SmTO8bhVPrHmWs2fHTveHU1ZlS8Xzv/twK4itj+3
+Q9k2WjxJ633/xCVlX4TavL5DWkfNMuYe4gs9NX9+ddMh+30H6ve6TvJyubBN8NYf
+C9ep26OmXwm+vcvut0J87yedf723mAs4OtwLViWlZAEA
+=WiiQ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zenvera
+
+==================================================================
