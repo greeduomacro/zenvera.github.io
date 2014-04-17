@@ -46,11 +46,11 @@ Zenvera tracks every poker game played within the world.
 <div id="poker-fishes">Loading...</div>
 </fieldset>
 </div>
-<script>$.get('https://myzv.herokuapp.com/poker-status.php', function( data ) { $( '#poker-status' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/poker-latest-low-rollers.php', function( data ) { $( '#poker-lowrollers' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/poker-latest-high-rollers.php', function( data ) { $( '#poker-highrollers' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/poker-largest-laydowns.php', function( data ) { $( '#poker-laydowns' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/poker-largest-showdowns.php', function( data ) { $( '#poker-showdowns' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/poker-sharks.php', function( data ) { $( '#poker-sharks' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/poker-fishes.php', function( data ) { $( '#poker-fishes' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/poker-status.php', function( data ) { $( '#poker-status' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/poker-latest-low-rollers.php', function( data ) { $( '#poker-lowrollers' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/poker-latest-high-rollers.php', function( data ) { $( '#poker-highrollers' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/poker-largest-laydowns.php', function( data ) { $( '#poker-laydowns' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/poker-largest-showdowns.php', function( data ) { $( '#poker-showdowns' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/poker-sharks.php', function( data ) { $( '#poker-sharks' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/poker-fishes.php', function( data ) { $( '#poker-fishes' ).html( data ); });</script>
 {% endraw %}

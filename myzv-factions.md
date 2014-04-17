@@ -31,8 +31,8 @@ icon: fa-trophy
 </fieldset>
 </div>
 <p style="clear: both; text-align: right; margin-top: 50px; font-size: 80%;">Icons &copy; Electronics Arts, Inc.</p>
-<script>$.get('https://myzv.herokuapp.com/faction-rankings.php', function( data ) { $( '#faction-rankings' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/faction-player-rankings.php', function( data ) { $( '#faction-player-rankings' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/faction-guild-rankings.php', function( data ) { $( '#faction-guild-rankings' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/faction-town-status.php', function( data ) { $( '#town-status' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/faction-rankings.php', function( data ) { $( '#faction-rankings' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/faction-player-rankings.php', function( data ) { $( '#faction-player-rankings' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/faction-guild-rankings.php', function( data ) { $( '#faction-guild-rankings' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/faction-town-status.php', function( data ) { $( '#town-status' ).html( data ); });</script>
 {% endraw %}

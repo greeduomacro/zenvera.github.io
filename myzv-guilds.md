@@ -25,7 +25,7 @@ icon: fa-trophy
 </fieldset>
 </div>
 <p style="clear: both;"></p>
-<script>$.get('https://myzv.herokuapp.com/guild-size-rankings.php', function( data ) { $( '#largest-guilds' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/guild-murder-rankings.php', function( data ) { $( '#murdering-guilds' ).html( data ); });</script>
-<script>$.get('https://myzv.herokuapp.com/guild-wars-rankings.php', function( data ) { $( '#warring-guilds' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/guild-size-rankings.php', function( data ) { $( '#largest-guilds' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/guild-murder-rankings.php', function( data ) { $( '#murdering-guilds' ).html( data ); });</script>
+<script>$.get('//myzv.herokuapp.com/guild-wars-rankings.php', function( data ) { $( '#warring-guilds' ).html( data ); });</script>
 {% endraw %}

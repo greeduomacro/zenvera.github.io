@@ -31,10 +31,10 @@ icon: fa-trophy
         }
     });
     function PlayerSearch() { 
-        $.get('https://myzv.herokuapp.com/player-search.php?term=' + $("#playerQ").val(), function( data ) { $( '#results' ).html( data ); }); return false;
+        $.get('//myzv.herokuapp.com/player-search.php?term=' + $("#playerQ").val(), function( data ) { $( '#results' ).html( data ); }); return false;
     }
     function GuildSearch() { 
-        $.get('https://myzv.herokuapp.com/guild-search.php?term=' + $("#guildQ").val(), function( data ) { $( '#results' ).html( data ); }); return false;
+        $.get('//myzv.herokuapp.com/guild-search.php?term=' + $("#guildQ").val(), function( data ) { $( '#results' ).html( data ); }); return false;
     }
 </script>
 {% endraw %}
