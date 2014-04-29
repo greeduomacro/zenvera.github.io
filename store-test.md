@@ -17,7 +17,7 @@ icon: fa-usd
         return true;
    }
 </script>
-<div style="width: auto;">
+<div style="width: 400px; border: 1px; border-style: solid; border-color: red;">
     <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
 </div>
 
