@@ -74,8 +74,8 @@ icon: fa-usd
 <script src="https://checkout.google.com/inapp/lib/buy.js"></script>
 <script type='text/javascript'>
     function RunButton() {
-        if(!$('#account-name').trim(this.value).length) {
-            alert( this.value + ' was empty');
+        if(!$('#account-name').val().trim(this.value).length) {
+            alert( 'account name was empty');
             return false;
         }
         $.post( "https://zenvera.herokuapp.com/store/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
