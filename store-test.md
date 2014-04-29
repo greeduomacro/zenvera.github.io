@@ -21,7 +21,7 @@ icon: fa-usd
     <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
 </div>
 
-<div style="text-align: center;">
+<div style="float: left;">
     <fieldset>
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -67,7 +67,7 @@ icon: fa-usd
     </fieldset>
 </div>
 
-<div style="text-align: center;">
+<div style="float: left;">
     <fieldset>
     <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
         <div>
@@ -99,11 +99,11 @@ icon: fa-usd
         google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
     }
 </script>
-<div style="text-align: center;">
+<div style="float: left;">
     <fieldset>
         <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
         <div>
-        <legend><b>Amazon Payments</b></legend>
+        <legend><b>Google Wallet</b></legend>
         <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
         <div>
             <select name="os0">
@@ -123,7 +123,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-<div style="text-align: center;">
+<div style="float: left;">
     <fieldset>
     <legend><b>Bitcoin</b></legend>
     <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
