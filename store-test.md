@@ -26,11 +26,11 @@ icon: fa-usd
 
 <div style="float: left;">
     <fieldset>
+    <legend><strong>PayPal - </strong><strong style="color: red;">Sale!</strong></legend>
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="J4QQMTXMQYS7N">
         <div>
-            <legend><strong>PayPal - </strong><strong style="color: red;">Sale!</strong></legend>
             <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
             <div>
                 <select name="os0">
@@ -72,9 +72,9 @@ icon: fa-usd
 
 <div style="float: left;">
     <fieldset>
+    <legend><b>Amazon Payments</b></legend>
     <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
         <div>
-            <legend><b>Amazon Payments</b></legend>
             <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
             <div>
                 <select name="os0">
@@ -86,9 +86,9 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="os1" id="a-a">
             </div>
-            <div align="center">
-                <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
-            </div>
+        </div>
+        <div align="center">
+            <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
         </div>
     </form>
     </fieldset>
@@ -106,9 +106,9 @@ icon: fa-usd
 </script>
 <div style="float: left;">
     <fieldset>
-        <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
+    <legend><b>Google Wallet</b></legend>
+    <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
         <div>
-            <legend><b>Google Wallet</b></legend>
             <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
             <div>
                 <select name="os0">
