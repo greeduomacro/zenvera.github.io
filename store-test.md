@@ -103,18 +103,18 @@ icon: fa-usd
     <fieldset>
         <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
         <div>
-        <legend><b>Google Wallet</b></legend>
-        <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
-        <div>
-            <select name="os0">
-                <option value="100 ZP">100 ZP $1.00 USD</option>
-                <option value="500 ZP">500 ZP $5.00 USD</option>
-                <option value="1100 ZP">1100 ZP $9.99 USD</option>
-                <option value="2400 ZP">2400 ZP $20.00 USD</option>
-                <option value="6500 ZP">6500 ZP $50.00 USD</option>
-            </select>
-            <input type="hidden" name="os1" id="g-a">
-        </div>
+            <legend><b>Google Wallet</b></legend>
+            <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
+            <div>
+                <select name="os0">
+                    <option value="100 ZP">100 ZP $1.00 USD</option>
+                    <option value="500 ZP">500 ZP $5.00 USD</option>
+                    <option value="1100 ZP">1100 ZP $9.99 USD</option>
+                    <option value="2400 ZP">2400 ZP $20.00 USD</option>
+                    <option value="6500 ZP">6500 ZP $50.00 USD</option>
+                </select>
+                <input type="hidden" name="os1" id="g-a">
+            </div>
         </div>
         <div align="center">
         <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
@@ -127,16 +127,19 @@ icon: fa-usd
     <fieldset>
     <legend><b>Bitcoin</b></legend>
     <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
-        <table>
-        <tr><td><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</td></tr><tr><td><select name="os0">
-                <option value="100 ZP">100 ZP $1.00 USD</option>
-                <option value="500 ZP">500 ZP $5.00 USD</option>
-                <option value="1100 ZP">1100 ZP $9.99 USD</option>
-                <option value="2400 ZP">2400 ZP $20.00 USD</option>
-                <option value="6500 ZP">6500 ZP $50.00 USD</option>
-        </select> </td></tr>
-        <tr><td><input type="hidden" name="os1" id="c-a"></td></tr>
-        </table>
+        <div>
+            <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
+            <div>
+                <select name="os0">
+                    <option value="100 ZP">100 ZP $1.00 USD</option>
+                    <option value="500 ZP">500 ZP $5.00 USD</option>
+                    <option value="1100 ZP">1100 ZP $9.99 USD</option>
+                    <option value="2400 ZP">2400 ZP $20.00 USD</option>
+                    <option value="6500 ZP">6500 ZP $50.00 USD</option>
+                </select>
+                <input type="hidden" name="os1" id="c-a">
+            </div>
+        </div>
         <div align="center">Under Development
         <!--<input type="image" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">-->
         </div>
