@@ -17,13 +17,15 @@ icon: fa-usd
         return true;
    }
 </script>
-<input type="text" name="account-name" id="account-name" maxlength="200" placeholder="Account Name">
+<div style="width: auto;">
+    <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
+</div>
 
 <div style="margin-left=auto; margin-right=auto;float:left; border: 2px; border-style: solid; border-color: red; text-align: center;">
     <fieldset>
     <legend><strong>PayPal - </strong><strong style="color: red;">Sale!</strong></legend>
 
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="J4QQMTXMQYS7N">
         <table>
@@ -37,7 +39,7 @@ icon: fa-usd
         </table>
         <div align="center">
             <input type="hidden" name="currency_code" value="USD">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" onclick='EnsureAccount("#p-a");'>
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </div>
     </form>
@@ -65,7 +67,7 @@ icon: fa-usd
 <div style="margin-left=auto; margin-right=auto; float:left; text-align: center;">
     <fieldset>
     <legend><b>Amazon Payments</b></legend>
-    <form action="https://zenvera.herokuapp.com/store/store-amazon.php" method="post" target="_top">
+    <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
         <table>
         <tr><td><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</td></tr><tr><td><select name="os0">
             <option value="100 ZP">100 ZP $1.00 USD</option>
@@ -77,7 +79,7 @@ icon: fa-usd
         <tr><td><input type="hidden" name="os1" id="a-a"></td></tr>
         </table>
         <div align="center">
-            <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments" onclick='EnsureAccount("#a-a");'>
+            <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
         </div>
     </form>
     </fieldset>
