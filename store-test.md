@@ -20,19 +20,22 @@ icon: fa-usd
    }
 </script>
 
-<div style="width: 20em; border: 2px; border-style: solid; border-color: red;">
-    <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
+<div style="width: 280px; border: 2px; border-style: solid; border-color: red;">
+    <fieldset>
+        <legend><strong>Account Name</strong></legend>
+        <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
+    </fieldset>
 </div>
 
 <div style="width: 250px; float: left;">
     <fieldset>
-    <legend><strong>PayPal - </strong><strong style="color: red;">Sale!</strong></legend>
+    <legend><strong>PayPal</strong></legend>
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="J4QQMTXMQYS7N">
         <div>
             <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
-            <div style="position: absolute;">
+            <div style="display: inline-block;">
                 <select name="os0">
                     <option value="500 ZP">500 ZP $5.00 USD</option>
                     <option value="1100 ZP">1100 ZP $10.00 USD</option>
@@ -72,11 +75,11 @@ icon: fa-usd
 
 <div style="width: 250px; float: left;">
     <fieldset>
-    <legend><b>Amazon Payments</b></legend>
+    <legend><strong>Amazon Payments</strong></legend>
     <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
         <div>
             <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
-            <div style="position: absolute;">
+            <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
                     <option value="500 ZP">500 ZP $5.00 USD</option>
@@ -104,11 +107,11 @@ icon: fa-usd
 </script>
 <div style="width: 250px; float: left;">
     <fieldset>
-    <legend><b>Google Wallet</b></legend>
+    <legend><strong>Google Wallet</strong></legend>
     <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
         <div>
             <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
-            <div style="position: absolute;">
+            <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
                     <option value="500 ZP">500 ZP $5.00 USD</option>
@@ -126,11 +129,11 @@ icon: fa-usd
 </div>
 <div style="width: 250px; float: left;">
     <fieldset>
-    <legend><b>Bitcoin</b></legend>
+    <legend><strong>Bitcoin</strong></legend>
     <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
         <div>
             <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
-            <div style="position: absolute;">
+            <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
                     <option value="500 ZP">500 ZP $5.00 USD</option>
