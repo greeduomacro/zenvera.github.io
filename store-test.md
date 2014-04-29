@@ -74,10 +74,13 @@ icon: fa-usd
 <script src="https://checkout.google.com/inapp/lib/buy.js"></script>
 <script type='text/javascript'>
     function RunButton() {
-        if(!$('#account-name').val().trim(this.value).length) {
-            alert( 'account name was empty');
+        var a = $('#account-name').val().trim()
+        if(!a.length) {
             return false;
         }
+        
+        $('#g-a').val(a);
+
         $.post( "https://zenvera.herokuapp.com/store/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
         google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
     }
@@ -94,7 +97,7 @@ icon: fa-usd
                 <option value="2400 ZP">2400 ZP $20.00 USD</option>
                 <option value="6500 ZP">6500 ZP $50.00 USD</option>
         </select> </td></tr>
-        <tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
+        <tr><td><input type="hidden" name="os1" id="g-a"></td></tr>
         </table>
         <div align="center">
         <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
