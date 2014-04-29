@@ -8,7 +8,14 @@ icon: fa-usd
 
 {% raw %}
 
+<noscript>Please enable JavaScript before attempting to place an order.</noscript>
+
 <script type='text/javascript'>
+    $(document).ready( function() {
+        $('#pp-btn').attr('disabled', false);
+        $('#a-btn').attr('disabled', false);
+    });
+
     function EnsureAccount(fId) {
         var a = $('#account-name').val().trim();
         if(!a.length) {
@@ -47,7 +54,7 @@ icon: fa-usd
                 <input type="hidden" name="os1" id="p-a">
                 <div style="text-align: center;">
                     <input type="hidden" name="currency_code" value="USD">
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <input id="pp-btn" disabled="true" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                 </div>
             </div>
@@ -90,7 +97,7 @@ icon: fa-usd
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
                 </select>
                 <input type="hidden" name="os1" id="a-a">
-                <div style="text-align: center;"><input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments"></div>
+                <div style="text-align: center;"><input id="a-btn" disabled="true" type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments"></div>
             </div>
         </div>
     </form>
