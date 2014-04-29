@@ -20,10 +20,12 @@ icon: fa-usd
    }
 </script>
 
-<div style="width: 280px; border: 2px; border-style: solid; border-color: red;">
+<div>
     <fieldset>
         <legend><strong>Account Name</strong></legend>
-        <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
+        <div style="width: 280px; border: 2px; border-style: solid; border-color: red;">
+                <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
+        </div>
     </fieldset>
 </div>
 
