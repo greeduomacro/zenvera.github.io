@@ -6,6 +6,17 @@ subheading: Zenvera is completely free to play. We rely on purchases from the Ze
 icon: fa-usd
 ---
 {% raw %}
+<script type='text/javascript'>
+    function EnsureAccount(fId) {
+        var a = $('#account-name').val().trim()
+        if(!a.length) {
+            return false;
+        }
+        
+        $(fId).val(a);
+        return true;
+   }
+</script>
 <input type="text" name="account-name" id="account-name" maxlength="200" placeholder="Account Name">
 
 <div style="margin-left=auto; margin-right=auto;float:left; border: 2px; border-style: solid; border-color: red; text-align: center;">
@@ -22,11 +33,11 @@ icon: fa-usd
                 <option value="2400 ZP">2400 ZP $20.00 USD</option>
                 <option value="6500 ZP">6500 ZP $50.00 USD</option>
             </select> </td></tr>
-            <tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
+            <tr><td><input type="hidden" name="os1" id="p-a"></td></tr>
         </table>
         <div align="center">
             <input type="hidden" name="currency_code" value="USD">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" onclick='EnsureAccount("#p-a");'>
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
         </div>
     </form>
@@ -63,10 +74,10 @@ icon: fa-usd
             <option value="2400 ZP">2400 ZP $20.00 USD</option>
             <option value="6500 ZP">6500 ZP $50.00 USD</option>
         </select> </td></tr>
-        <tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
+        <tr><td><input type="hidden" name="os1" id="a-a"></td></tr>
         </table>
         <div align="center">
-            <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
+            <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments" onclick='EnsureAccount("#a-a");'>
         </div>
     </form>
     </fieldset>
@@ -74,12 +85,8 @@ icon: fa-usd
 <script src="https://checkout.google.com/inapp/lib/buy.js"></script>
 <script type='text/javascript'>
     function RunButton() {
-        var a = $('#account-name').val().trim()
-        if(!a.length) {
+        if (!EnsureAccount('#g-a'))
             return false;
-        }
-        
-        $('#g-a').val(a);
 
         $.post( "https://zenvera.herokuapp.com/store/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
         google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
@@ -118,7 +125,7 @@ icon: fa-usd
                 <option value="2400 ZP">2400 ZP $20.00 USD</option>
                 <option value="6500 ZP">6500 ZP $50.00 USD</option>
         </select> </td></tr>
-        <tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
+        <tr><td><input type="hidden" name="os1" id="c-a"></td></tr>
         </table>
         <div align="center">Under Development
         <!--<input type="image" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">-->
