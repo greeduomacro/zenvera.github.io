@@ -26,7 +26,7 @@ icon: fa-usd
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="J4QQMTXMQYS7N">
-        <div style="float: left;">
+        <div>
             <legend><strong>PayPal - </strong><strong style="color: red;">Sale!</strong></legend>
             <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
             <div>
@@ -67,10 +67,10 @@ icon: fa-usd
     </fieldset>
 </div>
 
-<div style="float: clear; text-align: center;">
+<div style="text-align: center;">
     <fieldset>
     <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
-        <div style="float: left;">
+        <div>
         <legend><b>Amazon Payments</b></legend>
         <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
         <div>
@@ -101,18 +101,21 @@ icon: fa-usd
 </script>
 <div style="text-align: center;">
     <fieldset>
-        <legend><b>Google Wallet</b></legend>
         <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
-        <table>
-        <tr><td><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</td></tr><tr><td><select name="os0">
+        <div>
+        <legend><b>Amazon Payments</b></legend>
+        <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
+        <div>
+            <select name="os0">
                 <option value="100 ZP">100 ZP $1.00 USD</option>
                 <option value="500 ZP">500 ZP $5.00 USD</option>
                 <option value="1100 ZP">1100 ZP $9.99 USD</option>
                 <option value="2400 ZP">2400 ZP $20.00 USD</option>
                 <option value="6500 ZP">6500 ZP $50.00 USD</option>
-        </select> </td></tr>
-        <tr><td><input type="hidden" name="os1" id="g-a"></td></tr>
-        </table>
+            </select>
+            <input type="hidden" name="os1" id="g-a">
+        </div>
+        </div>
         <div align="center">
         <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
             <img src="https://zenvera.com/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>
