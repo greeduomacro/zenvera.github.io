@@ -5,6 +5,7 @@ heading: Store
 subheading: Zenvera is completely free to play. We rely on purchases from the Zenvera store to offset project expenses.
 icon: fa-usd
 ---
+
 {% raw %}
 
 <script type='text/javascript'>
@@ -148,7 +149,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-<br style="clear: both;"/>
+<br style="clear: both;">
 
 {% endraw %}
 
