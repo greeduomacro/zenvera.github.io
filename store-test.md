@@ -6,6 +6,8 @@ subheading: Zenvera is completely free to play. We rely on purchases from the Ze
 icon: fa-usd
 ---
 {% raw %}
+<input type="text" name="account-name" id="account-name" maxlength="200" placeholder="Account Name">
+
 <div style="margin-left=auto; margin-right=auto;float:left; border: 2px; border-style: solid; border-color: red; text-align: center;">
     <fieldset>
     <legend><strong>PayPal - </strong><strong style="color: red;">Sale!</strong></legend>
@@ -20,7 +22,7 @@ icon: fa-usd
                 <option value="2400 ZP">2400 ZP $20.00 USD</option>
                 <option value="6500 ZP">6500 ZP $50.00 USD</option>
             </select> </td></tr>
-            <tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+            <tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
         </table>
         <div align="center">
             <input type="hidden" name="currency_code" value="USD">
@@ -71,7 +73,12 @@ icon: fa-usd
 </div>
 <script src="https://checkout.google.com/inapp/lib/buy.js"></script>
 <script type='text/javascript'>
-    function RunButton() { $.post( "https://zenvera.herokuapp.com/store/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
+    function RunButton() {
+        if(!$('#account-name').trim(this.value).length) {
+            alert( this.value + ' was empty');
+            return false;
+        }
+        $.post( "https://zenvera.herokuapp.com/store/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
         google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
     }
 </script>
