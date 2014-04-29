@@ -39,7 +39,7 @@ icon: fa-usd
 	<option value="3000 ZP">3000 ZP $20.00 USD</option>
 	<option value="8125 ZP">8125 ZP $50.00 USD</option>
 </select> </td></tr>
-<tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+<tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
 </table>
 <input type="hidden" name="currency_code" value="USD">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -60,7 +60,7 @@ icon: fa-usd
             <option value="2400 ZP">2400 ZP $20.00 USD</option>
             <option value="6500 ZP">6500 ZP $50.00 USD</option>
         </select> </td></tr>
-        <tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        <tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
         </table>
         <div align="center">
             <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
@@ -86,7 +86,7 @@ icon: fa-usd
                 <option value="2400 ZP">2400 ZP $20.00 USD</option>
                 <option value="6500 ZP">6500 ZP $50.00 USD</option>
         </select> </td></tr>
-        <tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        <tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
         </table>
         <div align="center">
         <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
@@ -107,7 +107,7 @@ icon: fa-usd
                 <option value="2400 ZP">2400 ZP $20.00 USD</option>
                 <option value="6500 ZP">6500 ZP $50.00 USD</option>
         </select> </td></tr>
-        <tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+        <tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
         </table>
         <div align="center">Under Development
         <!--<input type="image" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">-->
