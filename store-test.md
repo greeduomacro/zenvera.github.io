@@ -74,24 +74,26 @@ icon: fa-usd
     <fieldset>
     <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
         <div>
-        <legend><b>Amazon Payments</b></legend>
-        <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
-        <div>
-            <select name="os0">
-                <option value="100 ZP">100 ZP $1.00 USD</option>
-                <option value="500 ZP">500 ZP $5.00 USD</option>
-                <option value="1100 ZP">1100 ZP $9.99 USD</option>
-                <option value="2400 ZP">2400 ZP $20.00 USD</option>
-                <option value="6500 ZP">6500 ZP $50.00 USD</option>
-            </select>
-            <input type="hidden" name="os1" id="a-a">
-        </div>
-        <div align="center">
-            <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
+            <legend><b>Amazon Payments</b></legend>
+            <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
+            <div>
+                <select name="os0">
+                    <option value="100 ZP">100 ZP $1.00 USD</option>
+                    <option value="500 ZP">500 ZP $5.00 USD</option>
+                    <option value="1100 ZP">1100 ZP $9.99 USD</option>
+                    <option value="2400 ZP">2400 ZP $20.00 USD</option>
+                    <option value="6500 ZP">6500 ZP $50.00 USD</option>
+                </select>
+                <input type="hidden" name="os1" id="a-a">
+            </div>
+            <div align="center">
+                <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
+            </div>
         </div>
     </form>
     </fieldset>
 </div>
+
 <script src="https://checkout.google.com/inapp/lib/buy.js"></script>
 <script type='text/javascript'>
     function RunButton() {
