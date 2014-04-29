@@ -123,7 +123,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-<div style="float: left;">
+<div style="float: none;">
     <fieldset>
     <legend><b>Bitcoin</b></legend>
     <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
@@ -143,7 +143,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-<br />
+<br style="clear: both;">
 {% endraw %}
 
 __Please double check your account name before placing your order.__
