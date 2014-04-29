@@ -41,9 +41,11 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="os1" id="p-a">
             </div>
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            <div style="text-align: center;">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </div>
         </div>
     </form>
 
@@ -84,7 +86,7 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="os1" id="a-a">
             </div>
-            <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
+            <div style="text-align: center;"><input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments"></div>
         </div>
     </form>
     </fieldset>
@@ -117,12 +119,12 @@ icon: fa-usd
                 <input type="hidden" name="os1" id="g-a">
             </div>
         <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
-            <img src="https://zenvera.com/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>
+            <div style="text-align: center;"><img src="https://zenvera.com/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'></div>
         </div>
     </form>
     </fieldset>
 </div>
-<div style="width: 25%; float: none;">
+<div style="width: 25%; float: left;">
     <fieldset>
     <legend><b>Bitcoin</b></legend>
     <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
@@ -138,7 +140,7 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="os1" id="c-a">
             </div>
-            Under Development
+            <div style="text-align: center;">Under Development</div>
         <!--<input type="image" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">-->
         </div>
     </form>
