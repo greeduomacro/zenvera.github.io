@@ -6,9 +6,10 @@ subheading: Zenvera is completely free to play. We rely on purchases from the Ze
 icon: fa-usd
 ---
 {% raw %}
+
 <script type='text/javascript'>
     function EnsureAccount(fId) {
-        var a = $('#account-name').val().trim()
+        var a = $('#account-name').val().trim();
         if(!a.length) {
             return false;
         }
@@ -17,6 +18,7 @@ icon: fa-usd
         return true;
    }
 </script>
+
 <div style="width: 400px; border: 2px; border-style: solid; border-color: red;">
     <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
 </div>
@@ -146,7 +148,8 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-<br style="clear: both;">
+<br style="clear: both;"/>
+
 {% endraw %}
 
 __Please double check your account name before placing your order.__
