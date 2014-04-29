@@ -24,7 +24,7 @@ icon: fa-usd
     <input type="text" name="account-name" id="account-name" maxlength="32" placeholder="Account Name">
 </div>
 
-<div style="width=25%; float: left;">
+<div style="width: 25%; float: left;">
     <fieldset>
     <legend><strong>PayPal - </strong><strong style="color: red;">Sale!</strong></legend>
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
@@ -41,8 +41,6 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="os1" id="p-a">
             </div>
-        </div>
-        <div align="center">
             <input type="hidden" name="currency_code" value="USD">
             <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
@@ -70,7 +68,7 @@ icon: fa-usd
     </fieldset>
 </div>
 
-<div style="width=25%; float: left;">
+<div style="width: 25%; float: left;">
     <fieldset>
     <legend><b>Amazon Payments</b></legend>
     <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
@@ -86,8 +84,6 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="os1" id="a-a">
             </div>
-        </div>
-        <div align="center">
             <input type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments">
         </div>
     </form>
@@ -104,7 +100,7 @@ icon: fa-usd
         google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
     }
 </script>
-<div style="width=25%; float: left;">
+<div style="width: 25%; float: left;">
     <fieldset>
     <legend><b>Google Wallet</b></legend>
     <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
@@ -120,15 +116,13 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="os1" id="g-a">
             </div>
-        </div>
-        <div align="center">
         <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
             <img src="https://zenvera.com/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>
         </div>
     </form>
     </fieldset>
 </div>
-<div style="width=25%; float: none;">
+<div style="width: 25%; float: none;">
     <fieldset>
     <legend><b>Bitcoin</b></legend>
     <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
@@ -144,8 +138,7 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="os1" id="c-a">
             </div>
-        </div>
-        <div align="center">Under Development
+            Under Development
         <!--<input type="image" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">-->
         </div>
     </form>
