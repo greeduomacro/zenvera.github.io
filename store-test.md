@@ -36,7 +36,7 @@ icon: fa-usd
     </fieldset>
 </div>
 
-<br style="clear: both;">
+<p></p>
 
 <div style="width: 250px; float: left;">
     <fieldset>
