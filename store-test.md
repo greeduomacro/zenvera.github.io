@@ -51,6 +51,7 @@ icon: fa-usd
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
                 </select>
+                <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="p-a">
                 <div style="text-align: center;">
                     <input type="hidden" name="currency_code" value="USD">
@@ -96,6 +97,7 @@ icon: fa-usd
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
                 </select>
+                <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="a-a">
                 <div style="text-align: center;"><input id="a-btn" disabled="true" type="image" src="https://authorize.payments.amazon.com/pba/images/payNowButton.png" border="0" name="submit" alt="Amazon Payments"></div>
             </div>
@@ -128,6 +130,7 @@ icon: fa-usd
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
                 </select>
+                <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="g-a">
                 <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
                 <div style="text-align: center;"><img src="https://zenvera.com/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'></div>
@@ -150,6 +153,7 @@ icon: fa-usd
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
                 </select>
+                <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="c-a">
                 <div style="text-align: center;">Under Development</div>
                 <!--<input type="image" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">-->
