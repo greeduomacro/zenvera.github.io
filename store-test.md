@@ -43,7 +43,7 @@ icon: fa-usd
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="J4QQMTXMQYS7N">
         <div>
-            <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
+            <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
                 <select name="os0">
                     <option value="500 ZP">500 ZP $5.00 USD</option>
@@ -88,7 +88,7 @@ icon: fa-usd
     <legend><strong>Amazon Payments</strong></legend>
     <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
         <div>
-            <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
+            <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
@@ -121,7 +121,7 @@ icon: fa-usd
     <legend><strong>Google Wallet</strong></legend>
     <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
         <div>
-            <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
+            <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
@@ -144,7 +144,7 @@ icon: fa-usd
     <legend><strong>Bitcoin</strong></legend>
     <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
         <div>
-            <div><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</div>
+            <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
