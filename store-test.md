@@ -35,7 +35,7 @@ icon: fa-usd
         </div>
     </fieldset>
 </div>
-<br>
+<br/>
 <div style="width: 250px; float: left;">
     <fieldset>
     <legend><strong>PayPal</strong></legend>
