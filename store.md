@@ -36,7 +36,7 @@ icon: fa-usd
     </fieldset>
 </div>
 <p></p>
-<div style="width: 250px; float: left;">
+<div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>PayPal</strong></legend>
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
@@ -83,7 +83,7 @@ icon: fa-usd
     </fieldset>
 </div>
 
-<div style="width: 250px; float: left;">
+<div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>Amazon Payments</strong></legend>
     <form action="https://zenvera.herokuapp.com/store/store-amazon.php" onsubmit='return EnsureAccount("#a-a");' method="post" target="_top">
@@ -116,7 +116,7 @@ icon: fa-usd
         google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
     }
 </script>
-<div style="width: 250px; float: left;">
+<div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>Google Wallet</strong></legend>
     <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
@@ -139,7 +139,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-<div style="width: 250px; float: left;">
+<div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>Bitcoin</strong></legend>
     <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
