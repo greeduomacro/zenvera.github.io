@@ -30,11 +30,13 @@ icon: fa-trophy
             GuildSearch();
         }
     });
-    function PlayerSearch() { 
-        $.get('//myzv.herokuapp.com/player-search.php?term=' + $("#playerQ").val(), function( data ) { $( '#results' ).html( data ); }); return false;
+    function PlayerSearch() {
+        var myzv = ('https:' == document.location.protocol ? 'https://myzv.herokuapp.com/' : 'http://my.zenvera.com/');
+        $.get(myzv+'player-search.php?term='+$("#playerQ").val(), function(data) { $('#results').html(data); }); return false;
     }
-    function GuildSearch() { 
-        $.get('//myzv.herokuapp.com/guild-search.php?term=' + $("#guildQ").val(), function( data ) { $( '#results' ).html( data ); }); return false;
+    function GuildSearch() {
+        var myzv = ('https:' == document.location.protocol ? 'https://myzv.herokuapp.com/' : 'http://my.zenvera.com/');
+        $.get(myzv+'guild-search.php?term='+$("#guildQ").val(), function(data) { $('#results').html(data); }); return false;
     }
 </script>
 {% endraw %}

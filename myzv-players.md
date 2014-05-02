@@ -19,6 +19,9 @@ icon: fa-trophy
 </fieldset>
 </div>
 <p style="clear: both;"></p>
-<script>$.get('//myzv.herokuapp.com/player-dueling-rankings.php', function( data ) { $( '#player-dueling' ).html( data ); });</script>
-<script>$.get('//myzv.herokuapp.com/player-murder-rankings.php', function( data ) { $( '#player-murderers' ).html( data ); });</script>
+<script>
+var myzv = ('https:' == document.location.protocol ? 'https://myzv.herokuapp.com/' : 'http://my.zenvera.com/');
+$.get(myzv+'player-dueling-rankings.php', function(data) { $('#player-dueling').html(data); });
+$.get(myzv+'/player-murder-rankings.php', function(data) { $('#player-murderers').html(data); });
+</script>
 {% endraw %}
