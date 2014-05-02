@@ -6,13 +6,13 @@ subheading: Zenvera Faction Status
 icon: fa-trophy
 ---
 {% raw %}
-<div style="float: left;">
+<div style="float: left; margin-right: 30px;">
 <fieldset>
 <legend><strong>Top Duelists</strong></legend>
 <div id="player-dueling">Loading...</div>
 </fieldset>
 </div>
-<div style="float: right;">
+<div style="float: left;">
 <fieldset>
 <legend><strong>Top Murderers</strong></legend>
 <div id="player-murderers">Loading...</div>
