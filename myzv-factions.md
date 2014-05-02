@@ -6,19 +6,19 @@ subheading: Zenvera Faction Status
 icon: fa-trophy
 ---
 {% raw %}
-<div style="float: left;">
+<div style="float: left; width: 320px; margin-right: 30px;">
 <fieldset>
 <legend><strong>Faction Rankings</strong></legend>
 <div id="faction-rankings">Loading...</div>
 </fieldset>
 </div>
-<div style="float: right; width: 380px;">
+<div style="float: left; width: 380px;">
 <fieldset>
 <legend><strong>Player Rankings</strong></legend>
 <div id="faction-player-rankings">Loading...</div>
 </fieldset>
 </div>
-<div style="float: left; margin-top: 50px;">
+<div style="float: left; width: 320px; margin-right: 30px;">
 <fieldset>
 <legend><strong>Guild Rankings</strong></legend>
 <div id="faction-guild-rankings">Loading...</div>
