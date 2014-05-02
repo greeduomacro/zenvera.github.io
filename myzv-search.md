@@ -17,7 +17,7 @@ icon: fa-trophy
 </form>
 </fieldset>
 <div id="results">Enter a full or partial player name. Searches must be at least 3 characters in length. Enter a full or partial guild name, or guild abbreviation.</div>
-<script src="js/purl.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>
 <script>
     $(document).ready( function() {
         var t = $.url().param('t');

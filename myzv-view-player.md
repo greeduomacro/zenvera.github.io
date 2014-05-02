@@ -8,7 +8,7 @@ icon: fa-trophy
 {% raw %}
 <!--<div id="paperdoll" style="float: right;">Loading...</div>-->
 <div id="details">Loading...</div>
-<script src="js/purl.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-url-parser/2.3.1/purl.min.js"></script>
 <script>
     $(document).ready( function() {
         var id = $.url().param('id');
