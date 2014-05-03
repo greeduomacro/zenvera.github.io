@@ -1,9 +1,10 @@
                 <h1 id="logo" style="float: left;"><a href="index.html">Zenvera <span>Ultima Project</span></a></h1>
 		<script>
-		$.get('//zenvera.herokuapp.com/status.php', function( data ) {
-			$('#status').html( data );
+		var api = ('https:' == document.location.protocol ? 'https://zenvera.herokuapp.com/' : 'http://api.zenvera.com/');
+		$.get(api+'status.php', function(data) {
+			$('#status').html(data);
                 }).fail( function() {
-			$('#status').html( '<a href="https://z.statushub.io/">Zenvera Status</a>' ) } );
+			$('#status').html('<a href="https://z.statushub.io/">Zenvera Status</a>') } );
 		</script>
                 <h1 id="status" style="position: absolute; text-align: center; float: none; width: 100%; left: 0; right: 0; z-index: -1"></h1>
 				<nav id="nav">
