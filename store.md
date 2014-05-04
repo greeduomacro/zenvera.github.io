@@ -180,13 +180,13 @@ If you require assistance with your order please feel free to e-mail support@zen
     $(document).ready( function() {
         var zv = ('https:' == document.location.protocol ? 'https://zenvera.herokuapp.com/' : 'http://api.zenvera.com/');
         $.get(zv+'store/current.php', function(data) {
-            $('#current-items').html(data);
+            $('#item-list').html(data);
         });
     });
 </script>
 {% endraw %}
 
-### Current Items
+#### Current Items
 
-<div id="current-items"></div>
+<div id="item-list"></div>
 <div style="clear: both;"></div>
