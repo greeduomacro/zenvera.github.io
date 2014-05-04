@@ -180,14 +180,7 @@ If you require assistance with your order please feel free to e-mail support@zen
     $(document).ready( function() {
         var zv = ('https:' == document.location.protocol ? 'https://zenvera.herokuapp.com/' : 'http://api.zenvera.com/');
         $.get(zv+'store/current.php', function(data) {
-            var uo = ('https:' == document.location.protocol ? 'https://ultima.herokuapp.com/' : 'http://uo.cx/');
-            var json = $.parseJSON(data);
-            var cur = '';
-            for (var i = 0; i < json.length; i++) {
-                var item = json[i];
-                cur += '<img src="'+uo+'api/v1/itemart.php?id='+item.itemid+'&hue='+item.hue+'">';
-            }
-            $('#current-items').html(cur);
+            $('#current-items').html(data);
         });
     });
 </script>
