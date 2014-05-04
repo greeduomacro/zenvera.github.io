@@ -185,4 +185,8 @@ If you require assistance with your order please feel free to e-mail support@zen
     });
 </script>
 {% endraw %}
+
+### Current Items
+
 <div id="current-items"></div>
+<div style="clear: both;"></div>
