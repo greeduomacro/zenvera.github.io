@@ -174,3 +174,19 @@ You can access the Zenvera redemption system in-game by typing [zenvera at any t
 Purchased items have no real world value. Due to the nature of the game Zenvera cannot be responsible for nor replace lost or stolen items.
 
 If you require assistance with your order please feel free to e-mail support@zenvera.com.
+
+{% raw %}
+<script type='text/javascript'>
+    $(document).ready( function() {
+        var zv = ('https:' == document.location.protocol ? 'https://zenvera.herokuapp.com/' : 'http://api.zenvera.com/');
+        $.get(zv+'store/current.php', function(data) {
+            var uo = ('https:' == document.location.protocol ? 'https://ultima.herokuapp.com/' : 'http://uo.cx/');
+            var json = $.parseJSON(data);
+            for (var i = 0; i < json.length; i++) {
+                var item = json[i];
+                console.log(item);
+            }
+        });
+    });
+</script>
+{% endraw %}
