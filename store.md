@@ -184,9 +184,11 @@ If you require assistance with your order please feel free to e-mail support@zen
             var json = $.parseJSON(data);
             for (var i = 0; i < json.length; i++) {
                 var item = json[i];
-                console.log(item);
+                cur += '<img src="'+uo+'api/v1/itemart.php?id='+item.itemid+'&hue='+item.hue+'">';
             }
+            $('#current-items').html(cur);
         });
     });
 </script>
 {% endraw %}
+<div id="current-items"></div>
