@@ -75,7 +75,7 @@ icon: fa-usd
             <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
-                    <option value="500 ZP">500 ZP $5.00 USD</option>
+                    <option selected="selected" value="500 ZP">500 ZP $5.00 USD</option>
                     <option value="1100 ZP">1100 ZP $9.99 USD</option>
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
@@ -108,7 +108,7 @@ icon: fa-usd
             <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
-                    <option value="500 ZP">500 ZP $5.00 USD</option>
+                    <option selected="selected" value="500 ZP">500 ZP $5.00 USD</option>
                     <option value="1100 ZP">1100 ZP $9.99 USD</option>
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
@@ -160,7 +160,7 @@ icon: fa-usd
             <div style="display: inline-block;">
                 <select name="os0" id="c-amt">
                     <option value="100">100 ZP $1.00 USD</option>
-                    <option value="500">500 ZP $5.00 USD</option>
+                    <option selected="selected" value="500">500 ZP $5.00 USD</option>
                     <option value="1100">1100 ZP $9.99 USD</option>
                     <option value="2400">2400 ZP $20.00 USD</option>
                     <option value="6500">6500 ZP $50.00 USD</option>
