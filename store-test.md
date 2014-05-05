@@ -35,19 +35,6 @@ icon: fa-usd
         </div>
     </fieldset>
 </div>
-<div>
-    <fieldset>
-        <legend><strong>Zenvera Points</strong></legend>
-        <div>
-                <select name="os0">
-                    <option value="500 ZP">500 ZP $5.00 USD</option>
-                    <option value="1100 ZP">1100 ZP $10.00 USD</option>
-                    <option value="2400 ZP">2400 ZP $20.00 USD</option>
-                    <option value="6500 ZP">6500 ZP $50.00 USD</option>
-                </select>
-        </div>
-    </fieldset>
-</div>
 <p style="clear: both;"></p>
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
@@ -74,25 +61,6 @@ icon: fa-usd
             </div>
         </div>
     </form>
-
-<!--
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="FEM5HV5S2PHMA">
-<table>
-<tr><td><input type="hidden" name="on0" value="Zenvera Points">Zenvera Points</td></tr><tr><td><select name="os0">
-	<option value="625 ZP">625 ZP $5.00 USD</option>
-	<option value="1375 ZP">1375 ZP $10.00 USD</option>
-	<option value="3000 ZP">3000 ZP $20.00 USD</option>
-	<option value="8125 ZP">8125 ZP $50.00 USD</option>
-</select> </td></tr>
-<tr><td><input type="hidden" name="on1" value="Account Name">Account Name</td></tr><tr><td><input type="text" name="os1" maxlength="200" placeholder="Account Name"></td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
--->
     </fieldset>
 </div>
 
@@ -109,7 +77,7 @@ icon: fa-usd
                     <option value="1100 ZP">1100 ZP $9.99 USD</option>
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
-		    <option value="14000 ZP">14000 ZP $100.00 USD</option>
+                    <option value="14000 ZP">14000 ZP $100.00 USD</option>
                 </select>
                 <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="a-a">
@@ -162,7 +130,9 @@ icon: fa-usd
         var cn = $('#c-a').val().trim();
         var camt = $('#c-amt').val().trim();
         $.get( "https://zenvera.herokuapp.com/store/generate-coinbase.php?os0="+camt+"&os1="+cn, function( data ) {
-            location.href = 'https://coinbase.com/checkouts/'+data;
+            $('#cb-if').attr('data-code', data);
+            $(document).trigger('coinbase_show_modal', data);
+            //location.href = 'https://coinbase.com/checkouts/'+data;
         });
         
         return false;
@@ -184,8 +154,8 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="c-a">
-                <input type="image" id="c-btn" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">
-                <div id="cb-if"></div>
+                <input type="image" id="c-btn" src="https://coinbase.com/assets/buttons/buy_now_small.png" border="0" name="submit" alt="Bitcoin">
+                <div class="coinbase-button" id="cb-if" data-code="" data-button-style="none"></div>
             </div>
         </div>
     </form>

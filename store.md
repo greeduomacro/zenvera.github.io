@@ -77,7 +77,7 @@ icon: fa-usd
                     <option value="1100 ZP">1100 ZP $9.99 USD</option>
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
-		    <option value="14000 ZP">14000 ZP $100.00 USD</option>
+                    <option value="14000 ZP">14000 ZP $100.00 USD</option>
                 </select>
                 <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="a-a">
