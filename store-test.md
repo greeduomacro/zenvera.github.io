@@ -148,7 +148,7 @@ icon: fa-usd
 
         var cn = $('#c-a').val().trim();
         var camt = $('#c-amt').val().trim();
-        $.get( "https://zenvera.herokuapp.com/store/generate-coinbase.php?os0="+cn+"&os1="+camt, function( data ) {
+        $.get( "https://zenvera.herokuapp.com/store/generate-coinbase.php?os0="+camt+"&os1="+cn, function( data ) {
                 $(document).trigger('coinbase_show_modal', data);
         });
         
