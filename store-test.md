@@ -122,6 +122,13 @@ icon: fa-usd
     </fieldset>
 </div>
 <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+<!--
+    100 => 1.00 => 94f92b90f6eeead5e2f8c2f92e3be71d
+    500 => 5.00 => ff23c9b7df316e8d4804c1987be2b378
+    1100 => 9.99 => bd472c1711b2203a3d5efda3772ca29a
+    2400 => 20.00 => 5f9e4be8fcf20dd3ba12aba8cddba8e9
+    6500 => 50.00 => f6354bfb4082a2335a192956b8a67775
+-->
 <script type='text/javascript'>
     function RunCoinbaseButton() {
         if (!EnsureAccount('#c-a'))
@@ -129,12 +136,19 @@ icon: fa-usd
 
         var cn = $('#c-a').val().trim();
         var camt = $('#c-amt').val().trim();
-        $.get( "https://zenvera.herokuapp.com/store/generate-coinbase.php?os0="+camt+"&os1="+cn, function( data ) {
-            $('#cb-if').attr('data-code', data);
-            $(document).trigger('coinbase_show_modal', data);
-            //location.href = 'https://coinbase.com/checkouts/'+data;
-        });
         
+        var data = '';
+        switch(camt) {
+            case 100: data = 94f92b90f6eeead5e2f8c2f92e3be71d; break;
+            case 500: data = ff23c9b7df316e8d4804c1987be2b378; break;
+            case 1100: data = bd472c1711b2203a3d5efda3772ca29a; break;
+            case 2400: data = 5f9e4be8fcf20dd3ba12aba8cddba8e9; break;
+            case 6500: data = f6354bfb4082a2335a192956b8a67775; break;
+            default: return false;
+        }
+        
+        $('.coinbase-button').attr('data-custom', cn);
+        $(document).trigger('coinbase_show_modal', data);
         return false;
     }
 </script>
@@ -146,16 +160,20 @@ icon: fa-usd
             <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
                 <select name="os0" id="c-amt">
-                    <option value="100 ZP">100 ZP $1.00 USD</option>
-                    <option value="500 ZP">500 ZP $5.00 USD</option>
-                    <option value="1100 ZP">1100 ZP $9.99 USD</option>
-                    <option value="2400 ZP">2400 ZP $20.00 USD</option>
-                    <option value="6500 ZP">6500 ZP $50.00 USD</option>
+                    <option value="100">100 ZP $1.00 USD</option>
+                    <option value="500">500 ZP $5.00 USD</option>
+                    <option value="1100">1100 ZP $9.99 USD</option>
+                    <option value="2400">2400 ZP $20.00 USD</option>
+                    <option value="6500">6500 ZP $50.00 USD</option>
                 </select>
                 <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="c-a">
                 <input type="image" id="c-btn" src="https://coinbase.com/assets/buttons/buy_now_small.png" border="0" name="submit" alt="Bitcoin">
-                <div class="coinbase-button" id="cb-if" data-code="" data-button-style="none"></div>
+                <div class="coinbase-button" data-code="94f92b90f6eeead5e2f8c2f92e3be71d" data-button-style="none"></div>
+                <div class="coinbase-button" data-code="ff23c9b7df316e8d4804c1987be2b378" data-button-style="none"></div>
+                <div class="coinbase-button" data-code="bd472c1711b2203a3d5efda3772ca29a" data-button-style="none"></div>
+                <div class="coinbase-button" data-code="5f9e4be8fcf20dd3ba12aba8cddba8e9" data-button-style="none"></div>
+                <div class="coinbase-button" data-code="f6354bfb4082a2335a192956b8a67775" data-button-style="none"></div>
             </div>
         </div>
     </form>
