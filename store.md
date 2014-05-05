@@ -27,7 +27,7 @@ icon: fa-usd
    }
 </script>
 
-<div>
+<div style="float: left;">
     <fieldset>
         <legend><strong>Account Name</strong></legend>
         <div style="width: 280px; border: 2px; border-style: solid; border-color: red;">
@@ -35,7 +35,20 @@ icon: fa-usd
         </div>
     </fieldset>
 </div>
-<p></p>
+<div>
+    <fieldset>
+        <legend><strong>Account Name</strong></legend>
+        <div style="width: 280px; border: 2px; border-style: solid; border-color: red;">
+                <select name="os0">
+                    <option value="500 ZP">500 ZP $5.00 USD</option>
+                    <option value="1100 ZP">1100 ZP $10.00 USD</option>
+                    <option value="2400 ZP">2400 ZP $20.00 USD</option>
+                    <option value="6500 ZP">6500 ZP $50.00 USD</option>
+                </select>
+        </div>
+    </fieldset>
+</div>
+<p style="clear: both;"></p>
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>PayPal</strong></legend>
