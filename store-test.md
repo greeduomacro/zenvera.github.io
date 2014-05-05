@@ -140,14 +140,29 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
+<script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+<script type='text/javascript'>
+    function RunCoinbaseButton() {
+        if (!EnsureAccount('#c-a'))
+            return false;
+
+        var cn = $('#c-a').val().trim();
+        var camt = $('#c-amt').val().trim();
+        $.get( "https://zenvera.herokuapp.com/store/generate-coinbase.php?os0="+cn+"&os1="+camt, function( data ) {
+                $(document).trigger('coinbase_show_modal', data);
+        });
+        
+        return false;
+    }
+</script>
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>Bitcoin</strong></legend>
-    <form action="https://zenvera.herokuapp.com/store/store-coinbase.php" method="post" target="_top">
+    <form action="#" onsubmit="return RunCoinbaseButton();">
         <div>
             <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
-                <select name="os0">
+                <select name="os0" id="c-amt">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
                     <option value="500 ZP">500 ZP $5.00 USD</option>
                     <option value="1100 ZP">1100 ZP $9.99 USD</option>
@@ -156,9 +171,7 @@ icon: fa-usd
                 </select>
                 <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="c-a">
-                <div style="text-align: center;"><a class="coinbase-button" data-code="4d4b84bbad4508b64b61d372ea394dad" href="https://coinbase.com/checkouts/4d4b84bbad4508b64b61d372ea394dad">Pay With Bitcoin</a>
-<script src="https://coinbase.com/assets/button.js" type="text/javascript"></script></div>
-                <!--<input type="image" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">-->
+                <input type="image" id="c-btn" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">
             </div>
         </div>
     </form>
