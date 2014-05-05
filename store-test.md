@@ -149,7 +149,8 @@ icon: fa-usd
         var cn = $('#c-a').val().trim();
         var camt = $('#c-amt').val().trim();
         $.get( "https://zenvera.herokuapp.com/store/generate-coinbase.php?os0="+camt+"&os1="+cn, function( data ) {
-            $('#cb-if').html('<div class="coinbase-button" data-code="'+data+'" data-button-style="none"></div>');
+            //$('#cb-if').html('<div class="coinbase-button" data-code="'+data+'" data-button-style="none"></div>');
+            $('#cb-if').html('<iframe src="https://coinbase.com/inline_payments/'+data+'" style="width: 500px; height: 160px; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.25); overflow: hidden;" scrolling="no" allowtransparency="true" frameborder="0"></iframe>');
             $(document).trigger('coinbase_show_modal', data);
         });
         
