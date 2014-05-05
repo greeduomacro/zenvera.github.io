@@ -139,11 +139,11 @@ icon: fa-usd
         
         var data = '';
         switch(camt) {
-            case 100: data = 94f92b90f6eeead5e2f8c2f92e3be71d; break;
-            case 500: data = ff23c9b7df316e8d4804c1987be2b378; break;
-            case 1100: data = bd472c1711b2203a3d5efda3772ca29a; break;
-            case 2400: data = 5f9e4be8fcf20dd3ba12aba8cddba8e9; break;
-            case 6500: data = f6354bfb4082a2335a192956b8a67775; break;
+            case '100': data = '94f92b90f6eeead5e2f8c2f92e3be71d'; break;
+            case '500': data = 'ff23c9b7df316e8d4804c1987be2b378'; break;
+            case '1100': data = 'bd472c1711b2203a3d5efda3772ca29a'; break;
+            case '2400': data = '5f9e4be8fcf20dd3ba12aba8cddba8e9'; break;
+            case '6500': data = 'f6354bfb4082a2335a192956b8a67775'; break;
             default: return false;
         }
         
