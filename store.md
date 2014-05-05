@@ -200,7 +200,7 @@ If you require assistance with your order please feel free to e-mail support@zen
 </script>
 {% endraw %}
 
-#### Current Items
+#### Random Items
 
 <div id="item-list"></div>
 <div style="clear: both;"></div>
