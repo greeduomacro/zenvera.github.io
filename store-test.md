@@ -149,7 +149,8 @@ icon: fa-usd
         var cn = $('#c-a').val().trim();
         var camt = $('#c-amt').val().trim();
         $.get( "https://zenvera.herokuapp.com/store/generate-coinbase.php?os0="+camt+"&os1="+cn, function( data ) {
-                $(document).trigger('coinbase_show_modal', data);
+            $('#cb-if').html('<div class="coinbase-button" data-code="'+data+'" data-button-style="none"></div>');
+            $(document).trigger('coinbase_show_modal', data);
         });
         
         return false;
@@ -172,6 +173,7 @@ icon: fa-usd
                 <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="c-a">
                 <input type="image" id="c-btn" src="https://coinbase.com/assets/buttons/buy_now_small-2161bfbbcfc0444a0c26cdac30778f7a.png" border="0" name="submit" alt="Bitcoin">
+                <div id="cb-if"></div>
             </div>
         </div>
     </form>
