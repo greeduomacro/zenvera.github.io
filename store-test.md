@@ -35,6 +35,7 @@ icon: fa-usd
         </div>
     </fieldset>
 </div>
+
 <p style="clear: both;"></p>
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
@@ -103,7 +104,6 @@ icon: fa-usd
     <legend><strong>Google Wallet</strong></legend>
     <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
         <div>
-            <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
                 <select name="os0">
                     <option value="100 ZP">100 ZP $1.00 USD</option>
@@ -112,7 +112,6 @@ icon: fa-usd
                     <option value="2400 ZP">2400 ZP $20.00 USD</option>
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
                 </select>
-                <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="g-a">
                 <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
                 <div style="text-align: center;"><img src="//storage.googleapis.com/cdn-1.appspot.com/zv/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'></div>
@@ -121,6 +120,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
+
 <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
 <!--
     100 => 1.00 => 94f92b90f6eeead5e2f8c2f92e3be71d
@@ -157,7 +157,6 @@ icon: fa-usd
     <legend><strong>Bitcoin</strong></legend>
     <form action="#" onsubmit="return RunCoinbaseButton();">
         <div>
-            <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
                 <select name="os0" id="c-amt">
                     <option value="100">100 ZP $1.00 USD</option>
@@ -166,9 +165,8 @@ icon: fa-usd
                     <option value="2400">2400 ZP $20.00 USD</option>
                     <option value="6500">6500 ZP $50.00 USD</option>
                 </select>
-                <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="c-a">
-                <input type="image" id="c-btn" src="https://coinbase.com/assets/buttons/buy_now_small.png" border="0" name="submit" alt="Bitcoin">
+                <div style="text-align: center;"><img src="https://coinbase.com/assets/buttons/buy_now_small.png" border="0" id="c-btn" alt="Bitcoin" value='buy' onclick='RunCoinbaseButton();'>
                 <div class="coinbase-button" data-code="94f92b90f6eeead5e2f8c2f92e3be71d" data-button-style="none"></div>
                 <div class="coinbase-button" data-code="ff23c9b7df316e8d4804c1987be2b378" data-button-style="none"></div>
                 <div class="coinbase-button" data-code="bd472c1711b2203a3d5efda3772ca29a" data-button-style="none"></div>
