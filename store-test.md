@@ -27,7 +27,7 @@ icon: fa-usd
    }
 </script>
 
-<div style="float: left;">
+<div>
     <fieldset>
         <legend><strong>Account Name</strong></legend>
         <div style="width: 280px; border: 2px; border-style: solid; border-color: red;">
@@ -36,7 +36,8 @@ icon: fa-usd
     </fieldset>
 </div>
 
-<p style="clear: both;"></p>
+<p></p>
+
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>PayPal</strong></legend>
