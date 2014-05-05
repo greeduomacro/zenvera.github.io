@@ -134,7 +134,7 @@ icon: fa-usd
                 <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="g-a">
                 <!--<img src="https://checkout.google.com/buttons/checkoutMobile.gif?merchant_id=176727849928054&w=152&h=30&style=white&variant=no-text&loc=en_US" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'>-->
-                <div style="text-align: center;"><img src="https://zenvera.com/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'></div>
+                <div style="text-align: center;"><img src="//storage.googleapis.com/cdn-1.appspot.com/zv/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'></div>
             </div>
         </div>
     </form>
