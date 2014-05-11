@@ -73,6 +73,35 @@ icon: fa-usd
 
 <p></p>
 
+<div style="width: 250px; height: 120px; float: left; border-color: red; border-style: solid; border-width: 1px;">
+    <fieldset>
+    <legend><strong>PayPal</strong> - <span style="color: red;">Sale!</span></legend>
+    <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="GTZECWPHPQ7C8">
+        <div>
+            <input type="hidden" name="on0" value="Zenvera Points">
+            <div style="display: inline-block;">
+                <select name="os0">
+	                <option value="600 ZP">600 ZP $5.00 USD</option>
+	                <option value="1320 ZP">1320 ZP $10.00 USD</option>
+                    <option value="2880 ZP">2880 ZP $20.00 USD</option>
+	                <option value="7800 ZP">7800 ZP $50.00 USD</option>
+                </select>
+                <input type="hidden" name="on1" value="Account Name">
+                <input type="hidden" name="os1" id="p-a">
+                <div style="text-align: center;">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input id="pp-btn" disabled="true" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </div>
+            </div>
+        </div>
+    </form>
+    </fieldset>
+</div>
+
+<!--
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>PayPal</strong></legend>
@@ -100,6 +129,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
+-->
 
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
