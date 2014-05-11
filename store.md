@@ -167,7 +167,7 @@ If you require assistance with your order please feel free to e-mail support@zen
 <div id="item-list"></div>
 <div style="clear: both;"></div>
 
-{% raw $}
+{% raw %}
 <script src="https://checkout.google.com/inapp/lib/buy.js" async></script>
 <script src="https://coinbase.com/assets/button.js" async></script>
 <!--
