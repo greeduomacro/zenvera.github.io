@@ -11,14 +11,14 @@ icon: fa-usd
 <noscript>Please enable JavaScript before attempting to place an order.</noscript>
 
 <script type='text/javascript'>
+    var zv = ('https:' == document.location.protocol ? 'https://zenvera.herokuapp.com/' : 'http://api.zenvera.com/');
+    $.get(zv+'store/current.php', function(data) {
+        $('#item-list').html(data);
+    });
+        
     $(document).ready( function() {
         $('#pp-btn').attr('disabled', false);
         $('#a-btn').attr('disabled', false);
-        
-        var zv = ('https:' == document.location.protocol ? 'https://zenvera.herokuapp.com/' : 'http://api.zenvera.com/');
-        $.get(zv+'store/current.php', function(data) {
-            $('#item-list').html(data);
-        });
     });
 
     function EnsureAccount(fId) {
