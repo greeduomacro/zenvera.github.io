@@ -14,6 +14,11 @@ icon: fa-usd
     $(document).ready( function() {
         $('#pp-btn').attr('disabled', false);
         $('#a-btn').attr('disabled', false);
+        
+        var zv = ('https:' == document.location.protocol ? 'https://zenvera.herokuapp.com/' : 'http://api.zenvera.com/');
+        $.get(zv+'store/current.php', function(data) {
+            $('#item-list').html(data);
+        });
     });
 
     function EnsureAccount(fId) {
@@ -25,6 +30,36 @@ icon: fa-usd
         $(fId).val(a);
         return true;
    }
+   
+    function RunGoogleButton() {
+        if (!EnsureAccount('#g-a'))
+            return false;
+
+        $.post( "https://zenvera.herokuapp.com/store/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
+        google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
+    }
+    
+    function RunCoinbaseButton() {
+        if (!EnsureAccount('#c-a'))
+            return false;
+
+        var cn = $('#c-a').val().trim();
+        var camt = $('#c-amt').val().trim();
+        
+        var data = '';
+        switch(camt) {
+            case '100': data = '94f92b90f6eeead5e2f8c2f92e3be71d'; break;
+            case '500': data = 'ff23c9b7df316e8d4804c1987be2b378'; break;
+            case '1100': data = 'bd472c1711b2203a3d5efda3772ca29a'; break;
+            case '2400': data = '5f9e4be8fcf20dd3ba12aba8cddba8e9'; break;
+            case '6500': data = 'f6354bfb4082a2335a192956b8a67775'; break;
+            default: return false;
+        }
+        
+        $('.coinbase-button').attr('data-custom', cn);
+        $(document).trigger('coinbase_show_modal', data);
+        return false;
+    }
 </script>
 
 <div>
@@ -90,20 +125,11 @@ icon: fa-usd
     </fieldset>
 </div>
 
-<script src="https://checkout.google.com/inapp/lib/buy.js"></script>
-<script type='text/javascript'>
-    function RunButton() {
-        if (!EnsureAccount('#g-a'))
-            return false;
-
-        $.post( "https://zenvera.herokuapp.com/store/google/generateJWT.php", $("#googleWalletForm").serialize(), function( data ) {
-        google.payments.inapp.buy({ jwt: data.genJWT, success: function() {console.log('success');}, failure: function(result) {console.log(result.response.errorType);} }); }, "json"); return false; 
-    }
-</script>
+<script src="https://checkout.google.com/inapp/lib/buy.js" async></script>
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>Google Wallet</strong></legend>
-    <form action="#" onsubmit="return RunButton();" id="googleWalletForm">
+    <form action="#" onsubmit="return RunGoogleButton();" id="googleWalletForm">
         <div>
             <div style="display: inline-block;">
                 <select name="os0">
@@ -114,14 +140,14 @@ icon: fa-usd
                     <option value="6500 ZP">6500 ZP $50.00 USD</option>
                 </select>
                 <input type="hidden" name="os1" id="g-a">
-                <div style="text-align: center;"><img src="//storage.googleapis.com/cdn-1.appspot.com/zv/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunButton();'></div>
+                <div style="text-align: center;"><img src="//storage.googleapis.com/cdn-1.appspot.com/zv/images/buy-button.png" width="152" border="0" alt="Google Wallet" id='buyButton' value='buy' onclick='RunGoogleButton();'></div>
             </div>
         </div>
     </form>
     </fieldset>
 </div>
 
-<script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+<script src="https://coinbase.com/assets/button.js" async></script>
 <!--
     100 => 1.00 => 94f92b90f6eeead5e2f8c2f92e3be71d
     500 => 5.00 => ff23c9b7df316e8d4804c1987be2b378
@@ -129,29 +155,6 @@ icon: fa-usd
     2400 => 20.00 => 5f9e4be8fcf20dd3ba12aba8cddba8e9
     6500 => 50.00 => f6354bfb4082a2335a192956b8a67775
 -->
-<script type='text/javascript'>
-    function RunCoinbaseButton() {
-        if (!EnsureAccount('#c-a'))
-            return false;
-
-        var cn = $('#c-a').val().trim();
-        var camt = $('#c-amt').val().trim();
-        
-        var data = '';
-        switch(camt) {
-            case '100': data = '94f92b90f6eeead5e2f8c2f92e3be71d'; break;
-            case '500': data = 'ff23c9b7df316e8d4804c1987be2b378'; break;
-            case '1100': data = 'bd472c1711b2203a3d5efda3772ca29a'; break;
-            case '2400': data = '5f9e4be8fcf20dd3ba12aba8cddba8e9'; break;
-            case '6500': data = 'f6354bfb4082a2335a192956b8a67775'; break;
-            default: return false;
-        }
-        
-        $('.coinbase-button').attr('data-custom', cn);
-        $(document).trigger('coinbase_show_modal', data);
-        return false;
-    }
-</script>
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>Bitcoin</strong></legend>
@@ -188,17 +191,6 @@ You can access the Zenvera redemption system in-game by typing [zenvera at any t
 Purchased items have no real world value. Due to the nature of the game Zenvera cannot be responsible for nor replace lost or stolen items.
 
 If you require assistance with your order please feel free to e-mail support@zenvera.com.
-
-{% raw %}
-<script type='text/javascript'>
-    $(document).ready( function() {
-        var zv = ('https:' == document.location.protocol ? 'https://zenvera.herokuapp.com/' : 'http://api.zenvera.com/');
-        $.get(zv+'store/current.php', function(data) {
-            $('#item-list').html(data);
-        });
-    });
-</script>
-{% endraw %}
 
 #### Random Items
 
