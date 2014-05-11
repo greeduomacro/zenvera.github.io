@@ -73,7 +73,7 @@ icon: fa-usd
 
 <p></p>
 
-<div style="width: 250px; height: 120px; float: left; border-color: red; border-style: solid; border-width: 1px;">
+<div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>PayPal</strong> - <span style="color: red;">Sale!</span></legend>
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
@@ -81,7 +81,7 @@ icon: fa-usd
         <input type="hidden" name="hosted_button_id" value="GTZECWPHPQ7C8">
         <div>
             <input type="hidden" name="on0" value="Zenvera Points">
-            <div style="display: inline-block;">
+            <div style="display: inline-block; border-color: red; border-style: solid; border-width: 1px;">
                 <select name="os0">
 	                <option value="600 ZP">600 ZP $5.00 USD</option>
 	                <option value="1320 ZP">1320 ZP $10.00 USD</option>
