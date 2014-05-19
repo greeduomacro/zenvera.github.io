@@ -25,7 +25,7 @@ icon: fa-usd
     <legend><strong>PayPal</strong> - <span style="color: red;">Sale!</span></legend>
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="GTZECWPHPQ7C8">
+        <input type="hidden" name="hosted_button_id" value="Z23ZYNJUV2DEA">
         <div>
             <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block; border-color: red; border-style: solid; border-width: 1px;">
@@ -34,6 +34,7 @@ icon: fa-usd
 	                <option value="1320 ZP">1320 ZP $10.00 USD</option>
                     <option value="2880 ZP">2880 ZP $20.00 USD</option>
 	                <option value="7800 ZP">7800 ZP $50.00 USD</option>
+	                <option value="15600 ZP">15600 ZP $100.00 USD</option>
                 </select>
                 <input type="hidden" name="on1" value="Account Name">
                 <input type="hidden" name="os1" id="p-a">
