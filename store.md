@@ -71,7 +71,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-
+<!--
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>Google Wallet</strong></legend>
@@ -92,7 +92,7 @@ icon: fa-usd
     </form>
     </fieldset>
 </div>
-
+-->
 <div style="width: 250px; height: 120px; float: left;">
     <fieldset>
     <legend><strong>Bitcoin</strong></legend>
