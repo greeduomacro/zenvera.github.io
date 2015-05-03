@@ -25,7 +25,7 @@ icon: fa-usd
     <legend><strong>PayPal</strong></legend>
     <form action="https://www.paypal.com/cgi-bin/webscr" onsubmit='return EnsureAccount("#p-a");' method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="J4QQMTXMQYS7N">
+        <input type="hidden" name="hosted_button_id" value="LQHNN3J6E2BSN">
         <div>
             <input type="hidden" name="on0" value="Zenvera Points">
             <div style="display: inline-block;">
