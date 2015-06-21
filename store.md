@@ -108,7 +108,7 @@ icon: fa-usd
                     <option value="6500">6500 ZP $50.00 USD</option>
                 </select>
                 <input type="hidden" name="os1" id="c-a">
-                <div style="text-align: center;"><img src="https://coinbase.com/assets/buttons/buy_now_small.png" border="0" id="c-btn" alt="Bitcoin" value='buy' onclick='RunCoinbaseButton();'></div>
+                <div style="text-align: center;"><img src="https://www.coinbase.com/assets/buttons/buy_now_small-a85719aea513ed5b1ab1a0becb1b958f2bc6af4bc2c485c69a26184916a59369.png" border="0" id="c-btn" alt="Bitcoin" value='buy' onclick='RunCoinbaseButton();'></div>
                 <div class="coinbase-button" data-code="94f92b90f6eeead5e2f8c2f92e3be71d" data-button-style="none"></div>
                 <div class="coinbase-button" data-code="ff23c9b7df316e8d4804c1987be2b378" data-button-style="none"></div>
                 <div class="coinbase-button" data-code="bd472c1711b2203a3d5efda3772ca29a" data-button-style="none"></div>
